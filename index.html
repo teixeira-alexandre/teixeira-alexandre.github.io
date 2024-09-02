@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal - Alexandre Teixeira</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header> <!-- Formatação das barras de menu -->
+        <div class="title-bar">
+            <h1>Portfólio de Alexandre Teixeira</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('sobre')">Sobre Mim</a></li>
+                <li><a href="#" onclick="showSection('formacao')">Formação</a></li>
+                <li><a href="#" onclick="showSection('sites')">Meus Sites</a></li>
+                <li><a href="#" onclick="showSection('contato')">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="content"> <!-- Conteúdo em texto do site -->
+        <section id="sobre" class="content-section">
+            <h1>Sobre Mim</h1>
+            <p>Olá, meu nome é Alexandre Teixeira, sou um desenvolvedor Web de 27 anos.</p>
+            <p>Sou apaixonado por tecnologia e desenvolvimento. Meus hobbies incluem leitura, filmes, séries, animações e jogos em geral.</p>
+            <p>Caso tenha interesse, mande um recado pela aba "Contato"!</p>
+        </section>
+        <section id="formacao" class="content-section" style="display:none;">
+            <h1>Formação Profissional</h1>
+            <ul>
+                <li>Ensino Médio - UTFPR - Câmpus Medianeira (2012-2015)</li>
+                <li>Bacharel em Direito - UDC Medianeira (2016-2020)</li>
+                <li>Cursando Análise e Desenvolvimento de Sistemas - UNINTER (2024-Atual)</li>
+                <li>Fluência em Inglês nível C2.</li>
+            </ul>
+        </section>
+        <section id="sites" class="content-section" style="display:none;">
+            <h1>Meus Sites</h1>
+            <p>Você pode ver alguns dos sites que já desenvolvi aqui:
+                <ol>
+                    <li><a href="https://teixeira-alexandre.vercel.app/" target="_blank">Portfólio Animado</a>.</li>
+                    <li><a href="https://alexandre-car-site.vercel.app/" target="_blank">Página de Aluguel de Veículos</a>.</li>
+                </ol> 
+                
+            </p>
+        </section>
+        <section id="contato" class="content-section" style="display:none;"> <!-- Página de contato -->
+            <h1>Gostou? Deixe uma mensagem!</h1>
+            <form id="contact-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Deixe seu nome aqui." required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Anote seu e-mail para que eu o responda!" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" placeholder="Digite sua mensagem!" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
